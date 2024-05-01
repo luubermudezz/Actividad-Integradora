@@ -10,7 +10,7 @@ body, html {
 .mobile-nav {
     display: none;
 }
-.navul{
+.nav-list{
     display: flex;
     list-style: none;
     padding: 0;
@@ -23,7 +23,7 @@ body, html {
 .img-logo {
     max-width: 5vw;
 }
-.icon_element {
+.icon-element {
     background-color: #F5F5F5;
 
 }
@@ -38,7 +38,7 @@ nav{
     color: #F5F5F5;
 }
 
-.navul li{
+.nav-list li{
     font-family: serif;    
     font-weight: bold;
     font-size: 1em;
@@ -50,13 +50,13 @@ nav{
     text-align: center;
 }
 
-.first_li_element {
+.first-li-element {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.navul li:hover {
+.nav-list li:hover {
     background-color: rgba(255, 255, 255, 0.562);
     cursor: pointer;
 }
@@ -112,6 +112,9 @@ input {
     flex-wrap: nowrap;
     background-color: #F5F5F5;
 
+}
+.line-products{
+    display: none;
 }
 
 
@@ -266,7 +269,7 @@ footer {
     align-items: center;
 }
 
-.description_product {
+.description-product {
     margin: 5%;
     text-align: left;
     padding-bottom: 5px;
@@ -288,13 +291,16 @@ footer {
 }
 
 @media (max-width: 320px) {
-    .navul li {
+    .nav-list li {
         font-size: 12px !important;
     }
 }
 @media (max-width: 700px) {
     .intro-div h1 {
         text-align: center;
+    }
+    .line-products {
+        display: block;
     }
     #home {
         flex-direction: column-reverse;
