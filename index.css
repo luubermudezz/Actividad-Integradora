@@ -4,38 +4,50 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: lightgray;
+    background-color: #F5F5F5;
 }
 
-ul{
+.mobile-nav {
+    display: none;
+}
+.navul{
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
     align-items: center;
+    height: 65px;
     justify-content: space-between;
-    background-color: lightgrey;
 }
 
 .img-logo {
     max-width: 5vw;
-    height: auto;
 }
+.icon_element {
+    background-color: #F5F5F5;
 
+}
+.card-title {
+    text-align: center;
+}
 nav{
     width: 100%;
     position: fixed;
     top: 0;
+    background-color: #560025;
+    color: #F5F5F5;
 }
 
-li{
-    font-family: monospace;
-    font-size: 15px;
+.navul li{
+    font-family: serif;    
+    font-weight: bold;
+    font-size: 1em;
     width: 100%;
-    height: 40px;
+    height: 65px;
     align-items: center;
     justify-content: center;
     display: flex;
+    text-align: center;
 }
 
 .first_li_element {
@@ -44,7 +56,7 @@ li{
     justify-content: flex-start;
 }
 
-li:hover {
+.navul li:hover {
     background-color: rgba(255, 255, 255, 0.562);
     cursor: pointer;
 }
@@ -52,10 +64,6 @@ li:hover {
 section {
     width: 100%;
     height: 100%;
-    
-}
-#store {
-    height: 90%;
 }
 
 h2 {
@@ -76,7 +84,9 @@ a {
     cursor: pointer;
     display: contents;
 }
-
+input {
+    width: 200px;
+}
 
 .product-container img {
     border-radius: 50%;
@@ -100,14 +110,13 @@ a {
     justify-content: center;
     align-content: center;
     flex-wrap: nowrap;
-    background-color: lightgray;
+    background-color: #F5F5F5;
 
 }
 
 
 #home div {
     height: 80%;
-    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -115,22 +124,22 @@ a {
 }
 
 #home div img {
-    width: 50%;
+    width: 40%;
 }
 
 .intro-div {
     align-items: flex-start !important;
 }
 
+.service-card span {
+    height: 30%;
+}
+
 .intro-div h1{
     margin: 0% 5%;
-    font-size: 80px;
-    font-family: serif;}
-
-.intro-div p {
-    margin: 5% 5%;
-    font-size: 24px;
+    font-size: 5em;
     font-family: serif;
+    color: #560025;
 }
 
 .store-line {
@@ -149,38 +158,51 @@ a {
 .contact-form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(245, 245, 245);
+    border: solid;
+    width: 30%;
+    height: 70%;
+    border-radius: 5%;
 }
 
 #contact {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: lightgray;
+    background-color: #560025;
     width: 100%;
+}
+#contact h2 {
+    color: #F5F5F5;
 }
 
 #about-us {
     display: flex;
     align-items: center;
-    background-color: white;
+    justify-content: center;
+    border-bottom:  rgb(86, 0, 37) 10px;
 }
 
 
 .insert-text {
-    width: 300px;
     height: 200px;
 }
-
+button{
+    width: 100px;
+    height: 5%;
+    background-color: #F5F5F5;
+}
 #about-us h3 {
-    font-size: 40px;
+    font-size: 2em;
     font-family: serif;
     text-align: left;
+    background-color: rgb(86, 0, 37);
+    color: #F5F5F5;
 }
 
 #our-services {
-    height: 90%;
     padding: 15px 0px;
     background-color: white;
 }
@@ -192,9 +214,22 @@ a {
 }
 
 #store {
-    background-color: lightgrey;
+    background-color: #560025;
+    padding-top: 8%;
+    height: 80%;
 }
-
+#store h2 {
+    color: #F5F5F5;
+    border: 1px 0px;
+}
+#store {
+    color: #F5F5F5;
+}
+section h2 {
+    color: rgb(86, 0, 37);
+    border: 1px 0px;
+    border-bottom: 2px solid rgb(86, 0, 37);
+}
 .about-deco{
     width: 270px;
     border-radius: 50%;
@@ -211,9 +246,9 @@ a {
 
 footer {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
-
-
 
 .services-container {
     display: grid;
@@ -222,43 +257,66 @@ footer {
     margin-top: 5%;
 }
 .service-card{
-    background-color: lightgray;
+    background-color: #F5F5F5;
     width: 250px;
-    min-height: 445px;
-    padding: 0% 1% 3% 1%;
-    border-radius: 5%;
+    height: 485px;
     margin-left: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.service-card p {
+.description_product {
     margin: 5%;
     text-align: left;
     padding-bottom: 5px;
 }
-.service-card h3 {
-    text-align: center;
+.service-card div {
     text-transform: uppercase;
+    background-color: rgb(86, 0, 37);
+    color: #F5F5F5;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#store h2 {
+    margin: 0;
+    padding: 0;
 }
 
-@media (max-width: 1024px) {
-    .intro-div h1 {
-        font-size: 40px;
-        text-align: center;
+@media (max-width: 320px) {
+    .navul li {
+        font-size: 12px !important;
     }
-    .intro-div p {
-        font-size: 14px;
+}
+@media (max-width: 700px) {
+    .intro-div h1 {
+        text-align: center;
     }
     #home {
         flex-direction: column-reverse;
+        margin-top: 10%;
+    }
+    #home div {
+        height: 35%;
     }
     #home div img {
-        width: 75%;
+        width: 50%;
     }
     .intro-div {
         margin-bottom: 100px;
+        width: 84%;
+    }
+
+    .intro-div h1 {
+        font-size: 3em;
+        margin-bottom: 8%;
+    }
+    .intro-div p {
+        font-size: 1em;
     }
     .desktop-nav {
         display: none;
@@ -276,9 +334,11 @@ footer {
     #about-us {
         height: fit-content;
         display: block;
+        padding-top: 18%;
     }
     #store {
         height: fit-content;
+        padding-top: 18%;
     }
     .product-container {
         grid-template-columns: repeat(1, 1fr);
@@ -288,32 +348,22 @@ footer {
     }
     #about-us h3 {
         text-align: center;
+        padding: 0px;
+        margin: 5px 0px 0px 0px;
     }
     .product-container img {
         width: 250px;
         margin-bottom: 80px;
     }
-    .insert-text {
-        width: 250px;
-    }
     #contact {
-        height: fit-content;
+        padding-top: 8%;
     }
     .contact-form {
         align-items: center;
+        width: 80%;
     }
     input {
         margin-bottom: 10px;
-    }
-    nav ul a li {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    nav ul {
-        flex-direction: column;
-        padding-left: 10px;
-        background-color: rgba(211, 211, 211, 0.7);
     }
     nav {
         position: sticky;
@@ -321,5 +371,41 @@ footer {
     .img-logo {
         display: none;
     }
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
 
+}
+@media (min-width: 701px) {
+    .intro-div p {
+        font-size: 1.5em;
+    }
+    #home div {
+        width: 100%;
+    }
+    #about-us h3 {
+        padding-left: 5%;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1041px){
+    .service-card {
+        font-size: 14px;
+        background-color: #F5F5F5;
+        width: 173px;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-container img {
+        width: 250px;
+    }
+}
+
+.intro-div p {
+    margin-left: 5%;
 }

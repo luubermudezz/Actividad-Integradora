@@ -9,12 +9,22 @@
 
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="#home"><li class="first_li_element"><img class="img-logo" src="./Images/freelogo.png" />Inicio</li></a>
+    <nav class="desktop-nav">
+        <ul class="navul">
+            <a href="#home"><li class="icon_element"><img class="img-logo" src="./Images/freelogo.png" /></li></a>
+            <a href="#home"><li class="first_li_element">Inicio</li></a>
             <a href="#our-services"><li class="sec_li_element">Nuestros Servicios</li></a>
             <a href="#store"><li class="sec_li_element">Nuestros Productos</li></a>
             <a href="#about-us"><li class="sec_li_element">Sobre Nosotros</li></a>
+            <a href="#contact"><li>Contacto</li></a>
+        </ul>
+    </nav>
+    <nav class="mobile-nav">
+        <ul class="navul">
+            <a href="#home"><li class="first_li_element">Inicio</li></a>
+            <a href="#our-services"><li class="sec_li_element">Servicios</li></a>
+            <a href="#store"><li class="sec_li_element">Productos</li></a>
+            <a href="#about-us"><li class="sec_li_element">Nosotros</li></a>
             <a href="#contact"><li>Contacto</li></a>
         </ul>
     </nav>
@@ -22,7 +32,8 @@
         <section id="home">
             <div class="intro-div">
                 <h1>Hacé tu vida más simple</h1>
-                <p>Nuestros organizadores pueden adaptarse a cualquier espacio de tu hogar. Nuestros modelos personalizados dejan a todos nuestros clientes satisfechos</p>
+                <p>Nuestros organizadores pueden adaptarse a cualquier espacio de tu hogar y nuestros modelos personalizados dejan a todos nuestros clientes satisfechos.</p>
+
             </div>
             <div>
                 <img src="./Images/freelogo.png" alt="logo-test">
@@ -32,30 +43,38 @@
             <h2>Nuestros Servicios</h2>
             <span class="services-container"> 
                 <div class="service-card">
-                    <h3>Personalización de productos</h3>
+                    <div><p class="card-title">Personalización de productos</p></div>
+                    <span>
                     <img src="./Images/personalizacion.png" width="110px"></img>
-                    <p>Destaca tu marca y agrega un toque personal a tus productos con nuestra opción de personalización. </p>
-                    <p>Personalizá organizadores con el logotipo o diseño de tu empresa, nombres de empleados, fechas importantes y más. </p>
-                    <p>El mejor regalo para tus allegados</p>
+                    </span>
+                    <p class="description_product">Destaca tu marca y agrega un toque personal a tus productos con nuestra opción de personalización. </p>
+                    <p class="description_product">Personalizá organizadores con el logotipo o diseño de tu empresa, nombres de empleados, fechas importantes y más. </p>
+                    <p class="description_product">El mejor regalo para tus allegados</p>
                 </div>
                 <div class="service-card">
-                    <h3>Regalos corporativos</h3>
+                    <div><p class="card-title">Regalos corporativos</p></div>
+                    <span>
                     <img src="./Images/gift.png" width="80px"></img>
-                    <p>Demuestra aprecio por tus empleados y socios comerciales con nuestros regalos corporativos exclusivos. </p>
-                    <p>Nuestros organizadores son perfectos para ocasiones especiales como eventos corporativos, aniversarios y más.</p>
-                    <p>Desde elegantes portatarjetas de visita hasta versátiles organizadores de escritorio.</p>
+                    </span>
+                    <p class="description_product">Demuestra aprecio por tus empleados y socios comerciales con nuestros regalos corporativos exclusivos. </p>
+                    <p class="description_product">Nuestros organizadores son perfectos para ocasiones especiales como eventos corporativos, aniversarios y más.</p>
+                    <p class="description_product">Desde elegantes portatarjetas de visita hasta versátiles organizadores de escritorio.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Branding</h3>
+                    <div><p class="card-title">Branding</p></div>
+                    <span>
                     <img src="./Images/branding.png" width="120px"></img>
-                    <p>Te ayudamos a crear una imagen de marca cohesiva utilizando organizadores en acrílico personalizados con los colores, logotipos y diseños que necesitás.</p> 
-                    <p> Nuestros productos personalizados son una forma efectiva de destacar tu marca en cualquier entorno.</p>
+                    </span>
+                    <p class="description_product">Te ayudamos a crear una imagen de marca cohesiva utilizando organizadores en acrílico personalizados con los colores, logotipos y diseños que necesitás.</p> 
+                    <p class="description_product"> Nuestros productos personalizados son una forma efectiva de destacar tu marca en cualquier entorno.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Favors para invitados</h3>
+                    <div><p class="card-title">Favors para invitados</p></div>
+                    <span>
                     <img src="./Images/favors.png" width="100px"></img>
-                    <p>Encuentra el detalle perfecto para tus invitados en nuestra tienda. Nuestros organizadores son ideales como favors para cualquier tipo de fiesta. </p>
-                   <p>Personaliza los organizadores con detalles únicos y haz que tus invitados se lleven un recuerdo especial de tu celebración.</p>
+                    </span>
+                    <p class="description_product">Encuentra el detalle perfecto para tus invitados en nuestra tienda. Nuestros organizadores son ideales como favors para cualquier tipo de fiesta. </p>
+                   <p class="description_product">Personaliza los organizadores con detalles únicos y haz que tus invitados se lleven un recuerdo especial de tu celebración.</p>
                 </div>
                 </span>
         </section>
@@ -92,9 +111,6 @@
                 <b>Sostenibilidad:</b> Nos comprometemos a operar de manera ecoamigable, utilizando prácticas de producción sostenibles y materiales reciclables en nuestros productos, contribuyendo así a la preservación del medio ambiente.</p>
             </div>
         </div>
-        <div class="about-pic">
-            <img class="about-deco" src="./Images/deco.jpeg" alt="deco">
-        </div>
             
         </section>
         <section id="contact">
@@ -106,7 +122,7 @@
                 <input type="text" name="subject">
                 <label>Inserte su consulta aquí:</label>
                 <input type="text" name="text" class="insert-text">
-                <input type="submit" value="Enviar">
+                <button type="submit"> Enviar </button>
             </form>
         </section>
         <footer>
